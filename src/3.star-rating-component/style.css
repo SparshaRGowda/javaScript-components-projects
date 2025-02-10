@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star-container {
+  padding: 30px;
+}
+
+.fa-star-o::before {
+  content: "\f006";
+  cursor: pointer;
+}
+
+.fa-star::before {
+  content: "\f005";
+  color: yellow;
+}
+
+.fa-star:hover {
+  cursor: pointer;
+}
+
+.rating-value-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
